@@ -1,0 +1,147 @@
+@media screen and (max-width:768px) {
+    /* sidebar collapse at small screen width */
+        
+    }
+
+@media screen and (min-width:768px) {
+    /* mobile friendly "side"bar (it's actually on the bottom) invisible at larger screen width */
+        
+
+    }
+
+body{
+    background-color:#e9eef3;
+}
+
+h1{
+    text-align:center;
+    color:#203867;
+    font-size:50px;
+}
+
+h2{
+    text-align:left;
+    color:#111e38;
+    font-size:34px;
+}
+
+h3{
+    font-size:24px;
+    color:#1a324d
+}
+
+h4{
+    font-size:24px;
+    color:#355b84
+}
+
+h6{
+    color:rgb(59, 59, 59);
+}
+
+.body-container{
+    background-color:#375e8b16;
+    /*margin:20px;*/
+    border-radius:4px;
+}
+
+.footer-text{
+    text-align:center;
+    
+}
+
+.footer-list{
+    text-align:center;
+    list-style-type:none;
+}
+
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header-text{
+    text-align:left;
+    color:#203867;
+    font-size:36px;
+}
+
+.navbar ul{
+    list-style:none;
+    margin:0;
+    padding-right:10;
+    display:flex;
+    gap:15px;
+}
+
+.navbar ul li{
+    display:inline;
+}
+
+.navbar ul li a {
+    font-size:18px;
+    text-decoration:none;
+    padding: 8px 12px;
+    color:#203867;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover{
+    color:#5e83aa;
+    transition: 0.2s;
+}
+
+.bodytext-home{
+    text-align:center;
+}
+
+.project-container{
+    display:inline-block;
+    background-color:#EDF2F9;
+    width:300px;
+    /*height:400px;*/
+    margin:10px;
+    padding:10px;
+    border-radius:4px;
+}
+
+.project-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:200px;
+    padding-top:10px;
+}
+
+.project-body{
+    display: flex;
+    justify-content: center; /* Centers columns horizontally */
+    align-items: center; /* Centers columns vertically (if parent has height) */
+}
+
+.collection-container{
+    display:inline-block;
+    background-color:#EDF2F9;
+    /*height:400px;*/
+    margin:20px;
+    padding:10px;
+    border-radius:4px;
+    margin: auto;
+    width: 50%;
+}
+
+.collection-link{
+    font-size:24px;
+    color:#355b84;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.collection-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:200px;
+    padding-top:10px;
+}
