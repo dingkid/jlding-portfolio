@@ -13,6 +13,13 @@ body{
     background-color:#e9eef3;
 }
 
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
 h1{
     text-align:center;
     color:#203867;
@@ -43,6 +50,11 @@ h6{
     background-color:#375e8b16;
     /*margin:20px;*/
     border-radius:4px;
+}
+
+.body-container a{
+    color:#1a324d;
+    font-size:18px;
 }
 
 .footer-text{
@@ -80,7 +92,7 @@ h6{
 }
 
 .navbar ul li a {
-    font-size:18px;
+    font-size:20px;
     text-decoration:none;
     padding: 8px 12px;
     color:#203867;
@@ -106,12 +118,17 @@ h6{
     border-radius:4px;
 }
 
-.project-image{
+.project-image-cover{
     display: block;
     margin-left: auto;
     margin-right: auto;
     height:200px;
     padding-top:10px;
+}
+
+.project-image{
+    margin-bottom:20px;
+    margin-top:20px;
 }
 
 .project-body{
@@ -120,22 +137,21 @@ h6{
     align-items: center; /* Centers columns vertically (if parent has height) */
 }
 
-.collection-container{
-    display:inline-block;
-    background-color:#EDF2F9;
-    /*height:400px;*/
-    margin:20px;
-    padding:10px;
-    border-radius:4px;
-    margin: auto;
-    width: 50%;
-}
-
-.collection-link{
-    font-size:24px;
-    color:#355b84;
+.project-link{
+    font-size:24px !important;
+    color:#355b84 !important;
     text-decoration:none;
     font-weight:600;
+}
+
+.project-link:hover{
+    color:#5e83aa !important;
+    transition: 0.2s;
+}
+
+.caption{
+    text-align:center;
+    font-style:italic;
 }
 
 .collection-image{
