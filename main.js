@@ -3,7 +3,7 @@ class MyHeader extends HTMLElement {
         this.innerHTML = `
         <div class="header-container p-3">
             <div class="col-5">
-                <h2 class="header-text">Jessica Ding: Design Portfolio</h2>
+                <h2 class="header-text">Jessica Ding: Portfolio</h2>
             </div>
             <nav class="navbar mr-3">
                 <ul>
@@ -35,7 +35,7 @@ class MyFooter extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
         <p class="footer-text py-3">
-        Last edited March 2025 by Jessica Ding.<br>
+        Last edited April 2025 by Jessica Ding.<br>
          Email: ding.je@northeastern.edu | Find me: <a href="https://www.linkedin.com/in/jlding" target="blank">LinkedIn</a>
         </p>
         `
