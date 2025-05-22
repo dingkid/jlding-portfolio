@@ -35,7 +35,7 @@ class MyFooter extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
         <p class="footer-text py-3">
-        Last edited April 2025 by Jessica Ding.<br>
+        Last edited May 2025 by Jessica Ding.<br>
          Email: ding.je@northeastern.edu | Find me: <a href="https://www.linkedin.com/in/jlding" target="blank">LinkedIn</a>
         </p>
         `
