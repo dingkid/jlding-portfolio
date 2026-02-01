@@ -31,12 +31,22 @@ class MyTitle extends HTMLElement {
 
 customElements.define('my-title', MyTitle)
 
+class MyBody extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML = `
+        
+        `
+    }
+}
+
+customElements.define('my-body', MyBody)
+
 class MyFooter extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
         <p class="footer-text py-3">
         Last edited January 2026 by Jessica Ding.<br>
-         Email: <a href=mailto:"ding.je@northeastern.edu">ding.je@northeastern.edu</a> | <a href="https://www.linkedin.com/in/jlding" target="blank">LinkedIn</a>
+         Email: <a href=mailto:"ding.je@northeastern.edu">ding.je@northeastern.edu</a> | <a href="https://www.linkedin.com/in/jlding" target="blank">LinkedIn</a> | <a href="https://monkeytype.com/profile/jiexi" target="blank">MonkeyType</a>
         </p>
         `
     }

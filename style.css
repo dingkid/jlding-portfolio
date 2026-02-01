@@ -20,6 +20,10 @@ body{
     width: 40%;
 }
 
+p{
+    font-size:18px;
+}
+
 h1{
     text-align:center;
     color:#203867;
@@ -33,7 +37,7 @@ h2{
 }
 
 h3{
-    font-size:24px;
+    font-size:36px;
     color:#1a324d
 }
 
@@ -125,6 +129,11 @@ h6{
     font-size:12px;
 }
 
+.aboutme-title{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
 .project-container{
     display:inline-block;
     background-color:#EDF2F9;
@@ -136,11 +145,10 @@ h6{
 }
 
 .project-image-cover{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height:200px;
-    padding-top:10px;
+    /*display: block;*/
+    object-fit:cover;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .project-image{
@@ -154,9 +162,8 @@ h6{
     align-items: center; /* Centers columns vertically (if parent has height) */
 }
 
-.project-link{
+.project-title{
     font-size:24px !important;
-    color:#355b84 !important;
     text-decoration:none;
     font-weight:600;
 }
@@ -181,4 +188,19 @@ h6{
 
 .gallery-image{
     object-fit:contain;
+}
+
+.viola-image{
+    float:right;
+    margin-right:50px;
+    margin-bottom:50px;
+}
+
+.card{
+    background-color:#EDF2F9;
+}
+
+.btn{
+    border-width:2px;
+    color:#1a324d;
 }
