@@ -25,20 +25,46 @@
 <div class="container">
     <div class="left-border col-sm-2"></div>
     <div class="body-container col py-5 px-5 ">
-        <a href="engineering-projects.html">Back</a><br>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='engineering-projects.html';">Back</button><br>
         <h2>Oingo Boingo</h2>
-        <img src="plant1-onscale.JPG" class="project-image">
+        <img src="plant1-onscale.JPG" class="center project-image">
         <p>"Oingo Boingo" Is a 1lb Plastic Ant (PlAnt) combat bot that was named minutes before its battle.
             This was a collaborative effort with Ian Bhatt, Albert Lin, and Peter Molzer, and the first ever robotics project I have ever worked on.<br>
             The design process began on a collaborative OnShape file. This design uses two wheels, and two "legs" to keep it upright.
             The horizontal propeller is dense, and serves as the weapon. All electronics are stored inside the chassis.<br>
+        </p>
             <img src="plant1-CAD.png" class="center project-image">
             <p class="caption">CAD assembly of PlAnt on OnShape, minus the covers</p>
-            Here, I assisted with the weapon motor shell part of the robot (in blue blelow), and thinning the walls to reduce 
-            the weight of the chassis when it was ever so slightly over 1lb.
-            <img src="plant1-crosssection.png" class="center project-image">
+        <p>Here, I assisted with the weapon motor shell part of the robot (in blue below). This 3d-printed part fits over the motor with a few milimeters of clearance, 
+            and provides a fitted slot for the propeller. I also worked on the part that holds the bearing (in dark grey with light grey hatching).
         </p>
-            
+            <img src="plant1-crosssection.png" class="center project-image">
+            <p class="caption">Cross-section of Oingo Boingo.</p>
+        <p>
+            Once we put the robot together for the first time and weighed it on the scale, we encountered a problem: 
+            Oingo Boingo was a small fraction of a pound over the weight limit with all of its contents. Most of our parts were either non-negotiable (such as electronics),
+            or 3d printed parts that would be difficult to recreate or take too long to reprint. The quickest solution that I came up with and executed
+            was to shave off as much as we could off the chassis walls and retain the thickness on the corners. 
+            This part took comparitively less time to reprint and brought Oingo Boingo comfortably below the weight limit.
+        </p>
+        <p>
+            We battled our robot on April 13, 2024 at the NU Robotics intramural competition and won miraculously against Hole, a ring spinner bot, in an unfortunate yet comical match.
+            Our victory was based solely on the fact that the chassis cover of Hole fell off and exposed electronics led to an immediate DQ. The video of our full match is below.
+        </p>
+        <iframe class="center" src="https://www.youtube.com/watch?v=FffTBC6scfw" height="300"></iframe>
+        <p class="caption">Unfortunately YouTube videos don't work on iframes anymore. Here is the <a href="https://www.youtube.com/watch?v=FffTBC6scfw" class="link" target="blank">link</a> to the video while I fix this problem.</p>
+        <p>
+            One of the our major mistakes that we noticed right off the bat was that our weapon was only able to hit robots that were taller than a certain height.
+            This gave us a massive disadvantage against shorter battlebots. Hole was much shorter than Oingo, leaving our robot in a vulnerable position.
+            Another issue that arose was that Oingo could not move properly while upside down. Some combat robots
+            are designed such that some form of control is achievable when they are flipped over, but we did not integrate that into our robot.
+            When Oingo was flipped over, it was pretty much stuck aside from making a few hilarious maneuvers. Structural integrity was the final one of the major problems with Oingo.
+            The propeller weapon fell out of the slot without much struggle, leaving our robot unable to fight. 
+        </p>
+        <p>If we were to make this robot again, the major revisions I would make would be to bring the COM closer to the floor
+            and create a more sturdy weapon fixture. Making the robot shorter (and making the wheels bigger) would make it possible to drive the robot while it is flipped upside-down. 
+            The press-fit for the weapon could be tighter, or we could make the motor shell and weapon the same part. 
+        </p>
         
     </div>
 

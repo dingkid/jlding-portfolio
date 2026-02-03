@@ -15,9 +15,8 @@ body{
 
 .center{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+    margin-left: auto  !important;
+    margin-right: auto !important;
 }
 
 p{
@@ -33,7 +32,11 @@ h1{
 h2{
     text-align:left;
     color:#111e38;
-    font-size:34px;
+    font-size:40px;
+}
+
+h2.center{
+    /*text-align:center;*/
 }
 
 h3{
@@ -125,8 +128,8 @@ h6{
     text-align:center;
 }
 
-.bodytext-link{
-    font-size:12px;
+a.link{
+    font-size:18px;
 }
 
 .aboutme-title{
@@ -154,6 +157,22 @@ h6{
 .project-image{
     margin-bottom:20px;
     margin-top:20px;
+    width:40%;
+    height:40%;
+}
+
+.project-image-sm{
+    margin-bottom:20px;
+    margin-top:20px;
+    width:25%;
+    height:25%;
+}
+
+.project-image-lg{
+    margin-bottom:20px;
+    margin-top:20px;
+    width:60%;
+    height:60%;
 }
 
 .project-body{
@@ -166,6 +185,7 @@ h6{
     font-size:24px !important;
     text-decoration:none;
     font-weight:600;
+    float:center;
 }
 
 .project-link:hover{
@@ -191,7 +211,7 @@ h6{
 }
 
 .viola-image{
-    float:right;
+    /*float:right;*/
     margin-right:50px;
     margin-bottom:50px;
 }
@@ -203,4 +223,13 @@ h6{
 .btn{
     border-width:2px;
     color:#1a324d;
+}
+
+div.CADmodel{
+    text-align:center;
+}
+
+img.CADmodel{
+    padding-left:20px;
+    padding-right:20px;
 }
