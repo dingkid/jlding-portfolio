@@ -1,79 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-  <script type=text/javascript src=main.js>
+    <script type=text/javascript src=main.js>
   </script>
-  
-  <title>1lb PlAnt: Oingo Boingo</title>
+
+    <title>1lb PlAnt: Oingo Boingo</title>
 
 </head>
 
 <body>
 
-<my-header></my-header>
-<div class="pt-5 pb-3">
-    <h1>ENGINEERING PROJECTS</h1>
-    <p class="bodytext-home">Projects I have worked on for class and in my free time.</p>
-</div>
+    <my-header></my-header>
+    <my-navbar></my-navbar>
 
-<div class="container">
-    <div class="left-border col-sm-2"></div>
-    <div class="body-container col py-5 px-5 ">
-        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='engineering-projects.html';">Back</button><br>
-        <h2>Oingo Boingo</h2>
-        <img src="plant1-onscale.JPG" class="center project-image">
-        <p>"Oingo Boingo" Is a 1lb Plastic Ant (PlAnt) combat bot that was named minutes before its battle.
-            This was a collaborative effort with Ian Bhatt, Albert Lin, and Peter Molzer, and the first ever robotics project I have ever worked on.<br>
-            The design process began on a collaborative OnShape file. This design uses two wheels, and two "legs" to keep it upright.
-            The horizontal propeller is dense, and serves as the weapon. All electronics are stored inside the chassis.<br>
-        </p>
-            <img src="plant1-CAD.png" class="center project-image">
-            <p class="caption">CAD assembly of PlAnt on OnShape, minus the covers</p>
-        <p>Here, I assisted with the weapon motor shell part of the robot (in blue below). This 3d-printed part fits over the motor with a few milimeters of clearance, 
-            and provides a fitted slot for the propeller. I also worked on the part that holds the bearing (in dark grey with light grey hatching).
-        </p>
-            <img src="plant1-crosssection.png" class="center project-image">
-            <p class="caption">Cross-section of Oingo Boingo.</p>
-        <p>
-            Once we put the robot together for the first time and weighed it on the scale, we encountered a problem: 
-            Oingo Boingo was a small fraction of a pound over the weight limit with all of its contents. Most of our parts were either non-negotiable (such as electronics),
-            or 3d printed parts that would be difficult to recreate or take too long to reprint. The quickest solution that I came up with and executed
-            was to shave off as much as we could off the chassis walls and retain the thickness on the corners. 
-            This part took comparitively less time to reprint and brought Oingo Boingo comfortably below the weight limit.
-        </p>
-        <p>
-            We battled our robot on April 13, 2024 at the NU Robotics intramural competition and won miraculously against Hole, a ring spinner bot, in an unfortunate yet comical match.
-            Our victory was based solely on the fact that the chassis cover of Hole fell off and exposed electronics led to an immediate DQ. The video of our full match is below.
-        </p>
-        <iframe class="center" src="https://www.youtube.com/watch?v=FffTBC6scfw" height="300"></iframe>
-        <p class="caption">Unfortunately YouTube videos don't work on iframes anymore. Here is the <a href="https://www.youtube.com/watch?v=FffTBC6scfw" class="link" target="blank">link</a> to the video while I fix this problem.</p>
-        <p>
-            One of the our major mistakes that we noticed right off the bat was that our weapon was only able to hit robots that were taller than a certain height.
-            This gave us a massive disadvantage against shorter battlebots. Hole was much shorter than Oingo, leaving our robot in a vulnerable position.
-            Another issue that arose was that Oingo could not move properly while upside down. Some combat robots
-            are designed such that some form of control is achievable when they are flipped over, but we did not integrate that into our robot.
-            When Oingo was flipped over, it was pretty much stuck aside from making a few hilarious maneuvers. Structural integrity was the final one of the major problems with Oingo.
-            The propeller weapon fell out of the slot without much struggle, leaving our robot unable to fight. 
-        </p>
-        <p>If we were to make this robot again, the major revisions I would make would be to bring the COM closer to the floor
-            and create a more sturdy weapon fixture. Making the robot shorter (and making the wheels bigger) would make it possible to drive the robot while it is flipped upside-down. 
-            The press-fit for the weapon could be tighter, or we could make the motor shell and weapon the same part. 
-        </p>
-        
+
+    <div class="pt-5 pb-3">
+        <h1>ENGINEERING PROJECTS</h1>
+        <p class="bodytext-home">Projects I have worked on for class and in my free time.</p>
     </div>
 
-    <div class="right-border col-sm-2"></div>
-</div>
+    <div class="container">
+        <div class="left-border col-sm-2"></div>
+        <div class="body-container col py-5 px-5 ">
+            <button type="button" class="project back"
+                onclick="location.href='engineering-projects.html';">Back</button><br>
+            <h2>Oingo Boingo</h2>
+            <img src="plant1-onscale.JPG" class="center project-image">
+            <p>"Oingo Boingo" Is a 1lb Plastic Ant (PlAnt) combat bot that was named minutes before its battle.
+                This was a collaborative effort with Ian Bhatt, Albert Lin, and Peter Molzer, and the first robotics
+                project I have ever worked on.<br>
+                The design process began on a collaborative OnShape file. This design uses two wheels, and two "legs" to
+                keep it upright.
+                The horizontal propeller is dense, and serves as the weapon. All electronics are stored inside the
+                chassis.<br>
+            </p>
+            <img src="plant1-CAD.png" class="center project-image">
+            <p class="caption">CAD assembly of PlAnt on OnShape, minus the covers</p>
+            <p>My main contributions to this project were:</p>
+            <ul>
+                <li>Modeling the weapon motor shell and housing for the propeller bearing. The shell houses the motor
+                    with a few millimeters of clearance
+                    and provides a fitted slot for the propeller.
+                </li>
+                <li>
+                    Shaving down the chassis walls when our robot was a small fraction of a pound over the weight limit.
+                    Since we were close to the deadline and
+                    electronics were non-negotiable, remodeling and reprinting the chassis was the quickest way to
+                    reduce that small amount of weight.
+                </li>
+            </ul>
+            <p>In the cross-section image below, the blue part is the motor shell, and the dark grey part with light
+                grey hatching holds the bearing in place.</p>
+            <img src="plant1-crosssection.png" class="center project-image">
+            <p class="caption">Cross-section of Oingo Boingo.</p>
+
+            <p>
+                We battled our robot on April 13, 2024 at the NU Robotics intramural competition and won miraculously
+                against Hole, a ring spinner bot, in an unfortunate yet comical match.
+                Our victory was based solely on the fact that the chassis cover of Hole fell off and exposed electronics
+                led to an immediate DQ. The video of our full match is below.
+            </p>
+            <iframe class="center" src="https://www.youtube.com/watch?v=FffTBC6scfw" height="300"></iframe>
+            <p class="caption">Unfortunately YouTube videos don't work on iframes anymore. Here is the <a
+                    href="https://www.youtube.com/watch?v=FffTBC6scfw" class="link" target="blank">link</a> to the video
+                while I fix this problem.</p>
+            <p>Some observations from the match:
+            <ul>
+                <li>Our weapon was placed too high, putting us at a massive disadvantage against shorter robots.</li>
+                <li>Oingo Boingo could not move properly when flipped upside down.
+                    Some combat robots are designed such that some form of control is achievable when they are flipped
+                    over, but we did not integrate that into our robot.
+                    Besides a few hilarious maneuvers, Oingo was pretty much stuck.</li>
+                <li>The weapon fell out of the slot without much struggle, leaving our robot unable to fight.</li>
+            </ul>
+            </p>
+
+            <p>If we were to make this robot again, the major revisions I would make would be to bring the COM closer to
+                the floor
+                and create a more sturdy weapon fixture. Making the robot shorter (and making the wheels bigger) would
+                make it possible to drive the robot while it is flipped upside-down.
+                The press-fit for the weapon could be tighter, or we could make the motor shell and weapon the same
+                part.
+            </p>
+
+        </div>
+
+        <div class="right-border col-sm-2"></div>
+    </div>
 </body>
 
 <footer>
-<my-footer></my-footer>
+    <my-footer></my-footer>
 </footer>
 
 </html>

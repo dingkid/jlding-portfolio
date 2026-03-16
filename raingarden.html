@@ -1,120 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-  <script type=text/javascript src=main.js>
+    <script type=text/javascript src=main.js>
   </script>
-  
-  <title>Jessica Ding Portfolio - Rain Garden Exhibit</title>
+
+    <title>Jessica Ding Portfolio - Rain Garden Exhibit</title>
 
 </head>
 
 <body>
 
-<my-header></my-header>
-<div class="pt-5 pb-3">
-    <h1>ENGINEERING PROJECTS</h1>
-    <p class="bodytext-home">Projects I have worked on for class and in my free time.</p>
-</div>
-
-<div class="container">
-    <div class="left-border col-sm-2"></div>
-    <div class="body-container col py-5 px-5 " >
-        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='engineering-projects.html';">Back</button>
-        <h2 class="center">Rain Garden Exhibit</h2>
-        <p>
-            In Cornerstone of Engineering, our final project was to create an portable, interactive, and accessible museum exhibit 
-            to teach grade-school children about one aspect of sustainability. These exhibits are intended to be game boards, so that they are interesting to younger children while still being educational.
-            The rain garden exhibit game board was designed for users to learn about the importance of water conservation and how it can be done through natural means in the city.
-            This project was a group effort with Kieran Hamilton, Lydia Karno, and Thomas Quirin.
-        </p>
-        <img src="raingarden-topview.png" alt="" class="center project-image"><br>
-        <h4>Rain Gardens</h4>
-        <p>
-            The design process began by coming up with more specific sustainability topics to base our exhibit on. The first two major topics that our group decided to look into were 
-            water conservation (understanding that water is a finite source), and city sustainability. As each group member looked more into one of those topics, we came up with a few even more specific topics.
-            One group member, Kieran, combined both of those topics and proposed we make an exhibit based on planting rain gardens in the city.</p>
-        <p>
-            Rain gardens are gardens planted in a depressed area with specific plant species to ensure proper filtration of rainwater. They are primarily used in cities where dirty runoff is present and natural drainage of rain is scarce. 
-            The plants used in these gardens thrive in a large range of conditions and are capable of filtering out pollutants from the collected water.
-            Rain gardens in urban areas also create habitats for smaller wildlife, reduce the need for irrigation systems, and bring aesthetic value to homes.
-        </p>
-        <p>The main idea of this exhibit is to show users (target audience being grade-school children) that water conservation and filtration can be done by your own means.
-            The game board represents a hill on a field in the fictional world of Zorb, a planet similar to Earth that adds a fun factor for the kids. Each of the six game pieces represents a plant choice and a soil choice of bad, okay or good quality.
-            Users can place these game pieces in the slots on the game board on the middle of the hill (bad), top of the hill (okay), or bottom of the hill (good). 
-            Each game piece contains a unique resistor that completes a circuit as it is placed into one of the slots on the board, so the computer can detect which game piece was placed down and in which slot it was placed.
-            After the concept of rain gardens is taught through either the user reading the informational tri-fold board or verbal explanation, the user can experiment with the game pieces 
-            and try to get the best combination for a rain garden setup. Scoring and feedback are given on the computer screen based on the user input.
-        </p>
-        <h4>Contributions</h4>
-        <p>
-            While we continued in the design process with Kieran's idea, I visualized his idea for the game board. 
-            He described what he was thinking and other group members contributed ideas while I digitally sketched up a concept, making sure each member agreed with what I was drawing.
-        </p>
-        <img class="center project-image-lg" height="500px" src="raingarden-ideasketch.png">
-        <p>
-            I was the project manager for the prototyping milestone. During this week, I made a 3d model and drawing of the game board on SolidWorks, and constructed a cardboard mock-up based on the model.
-            I also coordinated with my group on creating a bill of materials to determine what needs to be purchased and what we already had. By the end of the week, I wrote and submitted a memo recapping our progress for the week
-            and delivered a presentation to my Cornerstone class for feedback. 
-        </p>
-        <div class="CADmodel">
-        <img src="raingarden-CADmodel.png" alt="" class="project-image CADmodel">
-        <img src="raingarden-CADmodel2.png" alt="" class="project-image CADmodel">
-        </div>
-        <p class="caption">Isometric view of exhibit game board (left) and console (right).</p>
-        <img src="raingarden-CADdrawing.png" alt="" class="center project-image">
-        <p class="caption">Drawing of CAD model.</p>
-        <div class="CADmodel">
-        <img src="raingarden-cardboardprototype1.png" alt="" class="project-image CADmodel">
-        <img src="raingarden-cardboardprototype2.png" alt="" class="project-image CADmodel">
-        </div>
-        <p class="caption">Cardboard model of exhibit game board.</p>
-        <p>
-            The main feedback I got from this milestone was to scale down the final product as the cardboard mockup was much larger than necessary, and to change 
-            the moveable game pieces from cubes to flat square prisms so kids know which side the pieces should be placed down.
-        </p>
-        <p>
-            When we entered the building stage, my main contributions were helping construct the base game board and getting the resistor sensors to work.
-            Our game board is made out of wood. I glued and clamped some of the parts together and sawed out and filed the slots for the game pieces.
-        </p>
-        <img src="raingarden-assembly2.JPG" alt="" class="center project-image">
-        <p>As we were nearing the project deadline, we were experiencing issues getting the sensors to detect our game pieces. 
-            The original idea was to use copper sheets on the sides of the game piece so that they would "click" into the slots. However, these pieces were handmade
-            and could not be toleranced well enough to ensure that they would work consistently and without breaking off. I came up with a makeshift solution using 
-            aluminum foil in place of the copper sheets, and cardstock on the bottom of the slot in place of wood.
-        </p>
-        <img src="raingarden-sensors.png" alt="" class="center project-image-sm">
-        <p class="caption">The first iteration of this... solution that we realized actually worked.</p>
-        <p> Both the foil and cardstock were more flexible than the original materials,
-            allowing for a higher chance of contact between the resistors and wires. This solution was much less aesthetically pleasing than the original
-            concept, but worked and got us done in time for the Project Expo. 
-        </p>
-        <h4>Project Expo</h4>
-        <p>Students from local elementary schools came to Northeastern campus for an afternoon to check out all of the Cornerstone projects.
-            This was the ultimate test to see how successful our projects were.
-            Our game pieces and slots worked most of the time and the exhibit held up for the entire expo.
-            Overall, the students gave positive reviews for our exhibit and enjoyed moving the pieces into the slots and seeing the feedback.
-            However, the setup was not as intuitive as intended and we had to explain how to place the pieces to the students. 
-            It would not have been feasible to have this exhibit operate unattended with the way it was made. While this was not a core expectation of the project,
-            the entire process would have been smoother if the game instructions could be easily understood. Hiccups aside, it was rewarding to see all of the hard work
-            come together and know that people enjoyed what we made.
-        </p>
-        <p>
-            If you would like to read more about this project, check out <a href="https://drive.google.com/file/d/1kj786DU5PmD2c4GAPGabufNsMYei68R1/view" class="link" target="blank">the full report</a>.
-        </p>
+    <my-header></my-header>
+    <my-navbar></my-navbar>
+    <div class="pt-5 pb-3">
+        <h1>ENGINEERING PROJECTS</h1>
+        <p class="bodytext-home">Projects I have worked on for class and in my free time.</p>
     </div>
 
-    <div class="right-border col-sm-2"></div>
-</div>
+    <div class="container">
+        <div class="left-border col-sm-2"></div>
+        <div class="body-container col py-5 px-5 ">
+            <button type="button" class="project back"
+                onclick="location.href='engineering-projects.html';">Back</button>
+            <h2 class="center">Rain Garden Exhibit</h2>
+            <p>
+                In Cornerstone of Engineering, our final project was to create an portable, interactive, and accessible
+                museum exhibit to teach grade-school children about one aspect of sustainability. These exhibits are
+                intended to be game boards, so that they are interesting to younger children while still being
+                educational. The rain garden exhibit game board was designed for users to learn about the importance of
+                water conservation and how it can be done through natural means in the city. This project was a group
+                effort with Kieran Hamilton, Lydia Karno, and Thomas Quirin.
+            </p>
+            <p>During my first major engineeering project, I employed my digital drawing and new CAD skills during the
+                prototyping stage.
+                I did some woodworking while building the game board and learned basic soldering and circuitry for the
+                sensors. </p>
+            <img src="raingarden-topview.png" alt="" class="center project-image"><br>
+            <h4>Rain Gardens</h4>
+            <p>
+                The rain garden idea originated from one group member's idea to merge the two broader subjects
+                our group wanted to research - water conservation and city sustainability.</p>
+            <p>
+                Rain gardens are planted in depressed areas with specific plant species to ensure proper
+                filtration of rainwater. They are primarily used in cities where dirty runoff is present and natural
+                drainage of rain is scarce. Rain gardens in urban areas also
+                create habitats for smaller wildlife, reduce the need for irrigation systems, and bring aesthetic value
+                to homes.
+            </p>
+            <p>The main idea of this exhibit is to show users (target audience being grade-school children) that water
+                conservation and filtration can be done by your own means.
+                Users can select game pieces (3 plant type, 3 soil type), and place them in different slots on the game
+                board (garden location).
+                The system returns with a score and feedback depending on the quality of each choice (good, okay, bad).
+                Each game piece contains a unique resistor that completes a circuit as it is placed into one of the
+                slots on the board, so the computer can detect which game piece was placed down and in which slot it was
+                placed.
+            </p>
+            <h4>Contributions</h4>
+            <p>My primary roles in this project consisted of:</p>
+            <ul>
+                <li>Digitally sketching a preliminary game board concept on CLIP Studio Paint.</li>
+                <li>Being project manager for the prototyping milestone. I modeled our board prototype on SolidWorks and
+                    constructed a cardboard prototype. At the end of the week, I compiled a memo and proposed BOM and
+                    presented my team's progress to the class.</li>
+                <li>Helping constuct the game board with some basic woodworking skills (gluing and clamping parts,
+                    sawing out and sanding slots).</li>
+                <li>Testing and redesigning the sensors to get them to work. When our initial design wasn't working
+                    close to the deadline, I came up with a makeshift solution that resulted in more successful
+                    detection.</li>
+            </ul>
+            <h4>Project Expo</h4>
+            <p>Students from local elementary schools came to Northeastern campus for an afternoon to check out all of
+                the Cornerstone projects.
+                This was the ultimate test to see how successful our projects were.
+            </p>
+            <p>Some of our observations:</p>
+            <ul>
+                <li>Our game pieces worked most of the time and the exhibit held up for the entire expo.</li>
+                <li>Students gave positive reviews of our exhibit.</li>
+                <li>The game setup was not intuitive. Some explanation was needed before users could play the game.</li>
+                <li>This exhibit would not be able to run unattended.</li>
+            </ul>
+            <p>Changes could be made to the clarity of the game board and more work could be done to further improve the
+                sensors.
+                However, it was rewarding to see all of our hard work come together and know that people enjoyed what we
+                made.
+            </p>
+            <p>Below are some images and additional details from the process. If you would like to read more about this
+                project, check out <a href="https://drive.google.com/file/d/1kj786DU5PmD2c4GAPGabufNsMYei68R1/view"
+                    class="link" target="blank">the full report</a>.</p>
+            <img class="center project-image-lg" height="500px" src="raingarden-ideasketch.png">
+            <p class="caption">Digital sketch of initial concept.</p>
+            <div class="CADmodel">
+                <img src="raingarden-CADmodel.png" alt="" class="project-image CADmodel">
+                <img src="raingarden-CADmodel2.png" alt="" class="project-image CADmodel">
+            </div>
+            <p class="caption">Isometric view of exhibit game board (left) and console (right).</p>
+            <img src="raingarden-CADdrawing.png" alt="" class="center project-image">
+            <p class="caption">Drawing of CAD model.</p>
+            <div class="CADmodel">
+                <img src="raingarden-cardboardprototype1.png" alt="" class="project-image CADmodel">
+                <img src="raingarden-cardboardprototype2.png" alt="" class="project-image CADmodel">
+            </div>
+            <p class="caption">Cardboard model of exhibit game board.</p>
+            <p>
+                The main feedback I got from my prototype presentation was to scale down the final product as the
+                cardboard mockup
+                was much larger than necessary, and to change
+                the moveable game pieces from cubes to flat square prisms so kids know which side the pieces should be
+                placed down.
+            </p>
+            <img src="raingarden-assembly2.JPG" alt="" class="center project-image">
+            <p class="caption">Assembled topside of game board.</p>
+            <p>The original sensor concept was to use copper sheets on the sides of the game piece so that they
+                would "click" into the slots. The design was clean, but we did not have the means to make
+                well-toleranced durable parts. My makeshift solution involved using more flexible materials, such as
+                aluminum foil in place of the copper sheets, and cardstock on the bottom of the slot in place of wood.
+            </p>
+            <img src="raingarden-sensors.png" alt="" class="center project-image-sm">
+            <p class="caption">The first iteration of this... solution that we realized actually worked.</p>
+            <p> This solution was much less aesthetically pleasing than the original concept, but worked and got us done
+                in time for the Project Expo.
+            </p>
+
+        </div>
+
+        <div class="right-border col-sm-2"></div>
+    </div>
 </body>
 
 <footer>
-<my-footer></my-footer>
+    <my-footer></my-footer>
 </footer>
 
 </html>

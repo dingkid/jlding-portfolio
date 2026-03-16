@@ -10,7 +10,7 @@
     }
 
 body{
-    background-color:#e9eef3;
+    background-image:linear-gradient(to bottom, #0B3047, #203549);
 }
 
 .center{
@@ -21,17 +21,18 @@ body{
 
 p{
     font-size:18px;
+    color:#D0CDD7;
 }
 
 h1{
     text-align:center;
-    color:#203867;
+    color:#D0CDD7;
     font-size:50px;
 }
 
 h2{
     text-align:left;
-    color:#111e38;
+    color:#D0CDD7;
     font-size:40px;
 }
 
@@ -41,12 +42,12 @@ h2.center{
 
 h3{
     font-size:36px;
-    color:#1a324d
+    color:#D0CDD7;
 }
 
 h4{
-    font-size:24px;
-    color:#355b84
+    font-size:28px;
+    color:#D0CDD7;
 }
 
 h6{
@@ -54,7 +55,7 @@ h6{
 }
 
 .message{
-    background-color:#EDF2F9;
+    background-color:#acb0bdd7;
     border-radius:4px;
     padding-top:10px;
     padding-left:10px;
@@ -63,28 +64,36 @@ h6{
 
 .message p{
     font-weight:bold;
+    color:#0B3448;
+}
+
+.container{
+    padding:0;
 }
 
 .body-container{
-    background-color:#375e8b16;
+    background-color:#4155667f;
     /*margin:20px;*/
     border-radius:4px;
     /*padding:20px;*/
 }
 
 .body-container a{
-    color:#29486c;
+    color:#6C98B2;
     font-size:16px;
 }
 
-.footer-text{
-    text-align:center;
-    
-}
-
-.footer-list{
+/*.footer-list{
     text-align:center;
     list-style-type:none;
+}*/
+
+my-footer p{
+    text-align:center;
+}
+
+my-footer a{
+    color:#6C98B2;
 }
 
 .header-container{
@@ -95,33 +104,52 @@ h6{
 
 .header-text{
     text-align:left;
-    color:#203867;
+    color:#D9DBF1;
     font-size:36px;
 }
 
-.navbar ul{
+nav{
+    display:flex;
+    justify-content:center;
+    padding-bottom:1rem;
+}
+
+nav ul{
     list-style:none;
     margin:0;
+    padding-left:0 !important;
     padding-right:10;
-    display:flex;
     gap:15px;
+    display:flex;
 }
 
-.navbar ul li{
+nav ul li{
     display:inline;
+    padding-right:20px;
+    margin-right:10px;
+
 }
 
-.navbar ul li a {
-    font-size:20px;
+nav ul li a {
+    font-size:24px;
     text-decoration:none;
-    padding: 8px 12px;
-    color:#203867;
+    padding: 15px 20px;
+    background-color:#4155667f;
+    border-radius:4px;
+    color:#D0CDD7;
     transition: 0.3s;
+
 }
 
-.navbar ul li a:hover{
-    color:#5e83aa;
+nav ul li a:hover{
+    color:#ffffff;
+    background-color:#415566dc;
     transition: 0.2s;
+}
+
+ul li{
+    color:#D0CDD7;
+    font-size:18px;
 }
 
 .bodytext-home{
@@ -130,6 +158,7 @@ h6{
 
 a.link{
     font-size:18px;
+    color:#a8c6f3;
 }
 
 .aboutme-title{
@@ -147,6 +176,7 @@ a.link{
     border-radius:4px;
 }
 
+
 .project-image-cover{
     /*display: block;*/
     object-fit:cover;
@@ -155,21 +185,21 @@ a.link{
 }
 
 .project-image{
-    margin-bottom:20px;
-    margin-top:20px;
+    margin-bottom:0.3rem;
+    margin-top:1rem;
     width:40%;
     height:40%;
 }
 
 .project-image-sm{
-    margin-bottom:20px;
+    margin-bottom:0.3rem;
     margin-top:20px;
     width:25%;
     height:25%;
 }
 
 .project-image-lg{
-    margin-bottom:20px;
+    margin-bottom:0.3rem;
     margin-top:20px;
     width:60%;
     height:60%;
@@ -193,7 +223,13 @@ a.link{
     transition: 0.2s;
 }
 
+button.back{
+    margin-bottom:20px;
+}
+
 .caption{
+    font-size:16px;
+    padding-bottom:0.5rem;
     text-align:center;
     font-style:italic;
 }
@@ -207,7 +243,10 @@ a.link{
 }
 
 .gallery-image{
+    width:100%;
+    height:100%;
     object-fit:contain;
+    margin-bottom:2rem;
 }
 
 .viola-image{
@@ -217,12 +256,32 @@ a.link{
 }
 
 .card{
-    background-color:#EDF2F9;
+    background-color:#0b3047b6;
 }
 
-.btn{
+small{
+    color:#ACB0BD !important;
+}
+
+button{
     border-width:2px;
-    color:#1a324d;
+    padding:5px 10px;
+    border-radius:5px;
+    transition:0.2s;
+}
+
+button.project{
+    background-color:#D0CDD7;
+    color:#0B3047;
+    border-color:transparent;
+}
+
+button.project:hover{
+    border-width:2px;
+    background-color:transparent;
+    color:#D9DBF1!important;
+    border-color:#D9DBF1 !important;
+    transition:0.3s;
 }
 
 div.CADmodel{

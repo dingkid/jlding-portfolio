@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-  <script type=text/javascript src=main.js>
+    <script type=text/javascript src=main.js>
   </script>
-  
-  <title>1lb PlAnt: Twoobe</title>
+
+    <title>1lb PlAnt: Twoobe</title>
 
 </head>
 
 <body>
 
-<my-header></my-header>
-<div class="pt-5 pb-3">
-    <h1>ENGINEERING PROJECTS</h1>
-    <p class="bodytext-home">Projects I have worked on for class and in my free time.</p>
-</div>
+    <my-header></my-header>
+    <my-navbar></my-navbar>
 
-<div class="container">
-    <div class="left-border col-sm-2"></div>
-    <div class="body-container col py-5 px-5 " >
-        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='engineering-projects.html';">Back</button>
-            <h2>Twoobe</h2>
-            <p>"Twoobe" is a work in progress 1lb Plastic Ant robot and is inspired by the NHRL contestant <a href="https://wiki.nhrl.io/wiki/index.php/Noob_Tube">Noob Tube</a>. I am working on this robot with my friend Ryan Zhou. <br>
-            Unlike most other combat robots, Noob Tube's weapon is also its drive. Its chassis is a UMHW tube with a rough metal attachment serving as its weapon. 
-            With soft squishy bristles that actually prevent the wheels from spinning,
-            the body of the Noob Tube spins instead when the motors are powered. This creates a fast spinning weapon that covers the length of the robot,
-            and creates some chaotic, unpredictable, robot movements. Twoobe intends to be a scaled-down version of this concept.<br>
-            The robot consists of a few major parts: The tube, end caps, wheels, and electronics (which are housed inside the tube). The end caps of the tube
-            house the motors, keep the electronics contained and connect the wheels to the chassis. <br>
-            We began by working on the CAD for the tube and caps. These two parts are to be made alongside each other as the caps are expected to fit snugly inside the tube.
-            Below are the 3D-printed iterations of the cap we have so far.</p>
-        <img src="twoobe-capiterations.JPG" class="center project-image" alt="Four black plastic 3D-printed caps placed in a line on a table">
-        <p class="caption">Cap prototypes for Twoobe. Ordered with first on the left and most recent on the right.</p>
-        <p>The protruding part of the cap is designed to house the motor sit snugly inside the tube, while the wider flat part, is screwed down to the ends of the tube to keep it in place.
-            Some of the major changes between the iterations are the printing infill, the locations
-            of the screw holes, and the thickness of the motor housing.
-        </p>
+    <div class="pt-5 pb-3">
+        <h1>ENGINEERING PROJECTS</h1>
+        <p class="bodytext-home">Projects I have worked on for class and in my free time.</p>
     </div>
 
-    <div class="right-border col-sm-2"></div>
-</div>
+    <div class="container">
+        <div class="left-border col-sm-2"></div>
+        <div class="body-container col py-5 px-5 ">
+            <button type="button" class="project back"
+                onclick="location.href='engineering-projects.html';">Back</button>
+            <h2>Twoobe</h2>
+            <p>"Twoobe" is a work in progress 1lb Plastic Ant robot and is inspired by the NHRL contestant <a
+                    class="link" href="https://wiki.nhrl.io/wiki/index.php/Noob_Tube">Noob Tube</a>. I am working on
+                this robot with my friend Ryan Zhou.</p>
+            <p>Unlike most other combat robots, Noob Tube's weapon is also its drive. Its chassis is a UMHW tube with a
+                rough metal attachment serving as its weapon.
+                With soft squishy bristles that actually prevent the wheels from spinning,
+                the body of the Noob Tube spins instead when the motors are powered. This creates a fast spinning weapon
+                that covers the length of the robot,
+                and creates some chaotic, unpredictable, robot movements. Twoobe intends to be a scaled-down version of
+                this concept.</p>
+            <p>
+                The robot consists of a few major parts: The tube, end caps, wheels, and electronics (which are housed
+                inside the tube). The end caps of the tube
+                house the motors, keep the electronics contained and connect the wheels to the chassis.
+                We began by working on the CAD for the tube and caps. These two parts are to be made alongside each
+                other as the caps are expected to fit snugly inside the tube.
+                Below are the 3D-printed iterations of the cap we have so far.</p>
+            <img src="twoobe-capiterations.JPG" class="center project-image"
+                alt="Four black plastic 3D-printed caps placed in a line on a table">
+            <p class="caption">Cap prototypes for Twoobe. Ordered with first on the left and most recent on the right.
+            </p>
+            <p>
+                Some of the major changes between the iterations are the printing infill, the locations
+                of the screw holes, and the thickness of the motor housing.
+            </p>
+            <p>This project was resumed in February 2026. Here is some of the progress we made:</p>
+            <ul>
+                <li>Improved CAD housekeeping</li>
+                <li>Added more clearance in the end caps so wires could fit through</li>
+                <li>Added more screw holes on tube and end caps</li>
+            </ul>
+            <p>Upcoming challenges and considerations:</p>
+            <ul>
+                <li>Making our wheels optimally squishy such that they don't roll 100% effectively, but also aren't so
+                    soft they cannot move</li>
+                <li>Finding out if TPU air is the solution for our wheels</li>
+                <li>Staying under the 1lb limit!</li>
+            </ul>
+            <img src="Twoobe/twoobe-tubeMarch.png" class="center project-image"
+                alt="CAD model of a tube-shaped robot chassis.">
+            <p class="caption">Current model of tube chassis.</p>
+            <img src="Twoobe/twoobe-capMarch.png" class="center project-image" alt="CAD model of a robot chassis cap.">
+            <p class="caption">Current model of end caps.</p>
+        </div>
+
+        <div class="right-border col-sm-2"></div>
+    </div>
 </body>
 
 <footer>
-<my-footer></my-footer>
+    <my-footer></my-footer>
 </footer>
 
 </html>
