@@ -16,11 +16,11 @@ customElements.define('my-header', MyHeader)
 class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-          <nav class="">
-                <ul class="py-3">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="engineering-projects.html">Projects</a></li>
-                    <li><a href="gallery.html" title="Sorry, there's only one thing here.">Gallery</a></li>
+          <nav class="py-5">
+                <ul class="">
+                    <li class="pb-5"><a href="index.html">Home</a></li>
+                    <li class="pb-5"><a href="engineering-projects.html">Projects</a></li>
+                    <li class="pb-5"><a href="gallery.html" title="Sorry, there's only one thing here.">Gallery</a></li>
                     <li><a href="#" title="Coming soon">Music</a></li>
                 </ul>
             </nav>
@@ -29,6 +29,23 @@ class MyNavbar extends HTMLElement {
 }
 
 customElements.define('my-navbar', MyNavbar)
+
+class MyNavbarMobile extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            
+                <ul class="mobile">
+                    <li class="mobile"><a href="index.html">Home</a></li>
+                    <li class="mobile"><a href="engineering-projects.html">Projects</a></li>
+                    <li class="mobile"><a href="gallery.html">Gallery</a></li>
+                    <li class="mobile"><a href="#" title="Coming soon">Music</a></li>
+                </ul>
+
+        `
+    }
+}
+
+customElements.define('my-navbar-mobile', MyNavbarMobile)
 
 class MyTitle extends HTMLElement {
     connectedCallback() {
